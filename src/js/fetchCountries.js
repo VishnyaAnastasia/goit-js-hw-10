@@ -11,8 +11,8 @@ export function fetchCountries(name) {
     })
     .then(data => {
       if (data.length > 10) {
-        Notify.warning('Many matches found');
-        return data;
+        Notify.warning('Too many matches found');
+        return;
       }
       if (data.length >= 2 && data.length <= 10) {
         Notify.info(`Found ${data.length} countries`);

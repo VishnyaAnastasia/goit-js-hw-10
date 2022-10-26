@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #cbe6ff;
+  background-color: #ffc0cb;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -18,60 +18,97 @@ body {
 
 #search-box {
   display: flex;
-  width: 350px;
+  width: 450px;
   height: 45px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   justify-content: center;
   background-color: white;
   border-radius: 5;
   border: none;
   outline: none;
-  color: #ffbce8;
+  color: #8ddfff;
   font-weight: 700;
 }
 
 #search-box::placeholder {
   font-size: 20px;
   font-weight: 700;
-  opacity: 0.5;
-  color: #ffbce8;
+  opacity: 0.7;
+  color: #ffc0cb;
 }
 
 .notiflix-notify {
   height: 45px;
   border-radius: 5;
+  font-weight: 700;
 }
 
 .country-list {
   list-style: none;
   padding-left: 0;
-
   display: flex;
   flex-direction: column;
-
   gap: 10px;
 }
 
 .country-list-item {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
   padding: 10px;
-
   background-color: white;
   border-radius: 5;
   border: none;
   outline: none;
-  color: #ffbce8;
+  color: #8ddfff;
   font-weight: 700;
-  width: 350px;
+  width: 450px;
   height: auto;
+  gap: 15px;
 }
 
 .country-list-img {
-  padding-right: 15px;
+  display: block;
   width: 50px;
+}
+
+.country-name {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5;
+  border: none;
+  outline: none;
+  color: #8ddfff;
+  font-weight: 900;
+  width: 450px;
+  height: auto;
+  font-size: 20px;
+  gap: 10px;
+}
+.country-capital,
+.country-population,
+.country-languages {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5;
+  border: none;
+  outline: none;
+  color: #8ddfff;
+  font-weight: 700;
+  width: 450px;
+  height: auto;
+}
+.country-details {
+  font-weight: 900;
+  margin-right: 5px;
 }
