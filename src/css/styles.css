@@ -7,14 +7,71 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+  background-color: #cbe6ff;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 #search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  display: flex;
+  width: 350px;
+  height: 45px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5;
+  border: none;
+  outline: none;
+  color: #ffbce8;
+  font-weight: 700;
+}
+
+#search-box::placeholder {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.5;
+  color: #ffbce8;
+}
+
+.notiflix-notify {
+  height: 45px;
+  border-radius: 5;
+}
+
+.country-list {
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.country-list-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+  background-color: white;
+  border-radius: 5;
+  border: none;
+  outline: none;
+  color: #ffbce8;
+  font-weight: 700;
+  width: 350px;
+  height: auto;
+}
+
+.country-list-img {
+  padding-right: 15px;
+  width: 50px;
 }
